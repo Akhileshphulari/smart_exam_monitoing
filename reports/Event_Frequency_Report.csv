@@ -1,0 +1,15 @@
+﻿Section,Metric,Value
+Event Overview,Total Events,452
+Event Frequency,Tab Switch,113
+Event Frequency,Focus Lost,93
+Event Frequency,Face Absent,55
+Event Frequency,Reconnect,27
+Event Frequency,Normal Activity,164
+Detailed Frequency Table,normal_activity (count / %),164 (36.28%)
+Detailed Frequency Table,tab_switch (count / %),113 (25.0%)
+Detailed Frequency Table,focus_lost (count / %),93 (20.58%)
+Detailed Frequency Table,face_not_visible (count / %),55 (12.17%)
+Detailed Frequency Table,reconnect (count / %),27 (5.97%)
+Severity Breakdown,Normal (Tier 0),164 (36.28%)
+Severity Breakdown,Warning (Tier 1),120 (26.55%)
+Severity Breakdown,Critical (Tier 2),168 (37.17%)

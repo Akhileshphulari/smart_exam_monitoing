@@ -1,0 +1,101 @@
+﻿Session ID,Candidate ID,Total Events,Tab Switches,Face Absences,Focus Losses,Reconnections,Flagged Indicators,Detected Indicators,Alert Priority,Review Recommendation
+S099,C099,8,2,3,2,0,3,Repeated Camera Absence (3 face absence events); Prolonged Attention Disruption (2 focus losses); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S045,C045,6,3,0,2,0,3,Frequent Application Switching (3 tab switches); Prolonged Attention Disruption (2 focus losses); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S027,C027,5,2,0,2,0,2,Prolonged Attention Disruption (2 focus losses); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S020,C020,6,3,1,1,1,2,Frequent Application Switching (3 tab switches); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S028,C028,8,4,1,1,0,2,Frequent Application Switching (4 tab switches); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S035,C035,8,3,1,0,0,2,Frequent Application Switching (3 tab switches); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S065,C065,7,3,1,1,0,2,Frequent Application Switching (3 tab switches); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S063,C063,8,2,0,4,1,2,Prolonged Attention Disruption (4 focus losses); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S100,C100,7,2,0,3,0,2,Prolonged Attention Disruption (3 focus losses); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S097,C097,8,2,1,2,1,2,Prolonged Attention Disruption (2 focus losses); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S087,C087,8,1,2,2,1,2,Repeated Camera Absence (2 face absence events); Prolonged Attention Disruption (2 focus losses),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S096,C096,5,2,0,3,0,2,Prolonged Attention Disruption (3 focus losses); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S051,C051,8,1,2,2,0,2,Repeated Camera Absence (2 face absence events); Prolonged Attention Disruption (2 focus losses),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S054,C054,4,3,1,0,0,2,Frequent Application Switching (3 tab switches); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S013,C013,6,3,1,1,0,2,Frequent Application Switching (3 tab switches); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S012,C012,8,2,0,2,1,2,Prolonged Attention Disruption (2 focus losses); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S037,C037,7,3,1,0,0,2,Frequent Application Switching (3 tab switches); Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S046,C046,5,1,2,2,0,2,Repeated Camera Absence (2 face absence events); Prolonged Attention Disruption (2 focus losses),High Priority Review,Manual video log review strongly recommended to verify legitimate secondary monitor or app usage.
+S024,C024,8,4,0,1,0,1,Frequent Application Switching (4 tab switches),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S002,C002,5,2,1,1,0,1,Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S049,C049,6,3,0,1,1,1,Frequent Application Switching (3 tab switches),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S066,C066,6,1,0,2,0,1,Prolonged Attention Disruption (2 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S056,C056,3,0,2,1,0,1,Repeated Camera Absence (2 face absence events),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S057,C057,5,0,1,2,0,1,Prolonged Attention Disruption (2 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S022,C022,7,1,0,3,0,1,Prolonged Attention Disruption (3 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S029,C029,3,0,0,2,0,1,Prolonged Attention Disruption (2 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S014,C014,7,1,1,3,0,1,Prolonged Attention Disruption (3 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S007,C007,8,1,2,1,1,1,Repeated Camera Absence (2 face absence events),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S009,C009,5,0,0,2,0,1,Prolonged Attention Disruption (2 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S017,C017,7,1,2,1,0,1,Repeated Camera Absence (2 face absence events),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S026,C026,8,5,0,1,0,1,Frequent Application Switching (5 tab switches),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S073,C073,6,1,2,0,1,1,Repeated Camera Absence (2 face absence events),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S078,C078,6,0,0,2,0,1,Prolonged Attention Disruption (2 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S072,C072,3,0,0,2,0,1,Prolonged Attention Disruption (2 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S075,C075,7,2,1,1,1,1,Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S076,C076,5,3,0,0,0,1,Frequent Application Switching (3 tab switches),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S055,C055,5,1,2,1,0,1,Repeated Camera Absence (2 face absence events),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S042,C042,7,1,0,3,1,1,Prolonged Attention Disruption (3 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S044,C044,5,1,0,4,0,1,Prolonged Attention Disruption (4 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S067,C067,6,2,1,1,0,1,Multi-Vector Telemetry Concurrence (simultaneous tab + camera flags),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S093,C093,4,3,0,0,0,1,Frequent Application Switching (3 tab switches),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S092,C092,6,0,2,1,2,1,Repeated Camera Absence (2 face absence events),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S082,C082,3,0,1,2,0,1,Prolonged Attention Disruption (2 focus losses),Moderate Monitoring,Standard review recommended; verify student explanation or network stability.
+S030,C030,2,1,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S036,C036,3,1,1,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S034,C034,7,1,1,0,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S033,C033,4,0,1,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S032,C032,1,0,1,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S016,C016,2,0,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S015,C015,7,1,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S018,C018,2,0,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S019,C019,4,0,1,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S005,C005,3,0,0,1,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S011,C011,2,1,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S003,C003,1,0,1,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S004,C004,3,0,0,1,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S001,C001,3,0,1,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S031,C031,8,2,0,1,2,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S023,C023,2,0,1,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S025,C025,5,1,0,0,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S021,C021,2,0,1,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S010,C010,6,2,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S006,C006,1,0,1,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S008,C008,8,1,1,0,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S052,C052,2,0,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S050,C050,6,1,1,1,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S047,C047,1,0,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S038,C038,1,0,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S068,C068,4,2,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S061,C061,4,1,1,0,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S062,C062,5,2,0,1,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S064,C064,1,0,1,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S053,C053,2,0,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S058,C058,3,0,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S059,C059,2,1,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S060,C060,3,2,0,0,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S043,C043,8,2,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S041,C041,2,2,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S039,C039,1,0,0,0,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S040,C040,6,0,1,0,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S048,C048,7,1,1,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S074,C074,3,2,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S071,C071,2,0,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S070,C070,1,0,1,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S084,C084,5,1,1,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S083,C083,1,0,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S081,C081,2,0,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S080,C080,1,0,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S077,C077,3,0,0,1,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S079,C079,1,1,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S069,C069,5,2,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S086,C086,8,1,1,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S091,C091,2,0,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S090,C090,1,1,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S089,C089,2,1,0,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S088,C088,5,1,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S085,C085,6,1,0,1,1,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S094,C094,3,1,1,0,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S095,C095,2,1,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.
+S098,C098,2,0,0,1,0,0,Nominal baseline proctoring behavior,Low / Standard,Nominal behavior; no immediate supervisory intervention required.

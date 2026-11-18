@@ -1,0 +1,299 @@
+check_id,session_id,candidate_id,timestamp,detected_state,ground_truth,lighting_condition,confidence,absence_duration_seconds
+FC_0001,S001,C001,2026-10-20 10:15:50,face_present,present,Normal,0.84,0
+FC_0002,S001,C001,2026-10-20 10:09:50,face_present,present,Normal,0.91,0
+FC_0003,S001,C001,2026-10-20 10:08:50,face_present,present,Normal,0.72,0
+FC_0004,S001,C001,2026-10-20 10:07:50,face_present,present,Normal,0.73,0
+FC_0005,S002,C002,2026-10-20 15:57:29,face_present,present,Normal,0.74,0
+FC_0006,S002,C002,2026-10-20 15:59:29,face_present,present,Normal,0.88,0
+FC_0007,S002,C002,2026-10-20 15:36:29,face_absent,absent,Normal,0.8,16
+FC_0008,S002,C002,2026-10-20 15:41:29,face_present,present,Normal,0.75,0
+FC_0009,S003,C003,2026-10-20 14:26:11,face_present,present,Normal,0.9,0
+FC_0010,S003,C003,2026-10-20 14:20:11,face_present,present,Normal,0.73,0
+FC_0011,S004,C004,2026-10-20 13:00:39,face_present,present,Normal,0.92,0
+FC_0012,S004,C004,2026-10-20 12:49:39,face_present,present,Normal,0.81,0
+FC_0013,S004,C004,2026-10-20 12:50:39,face_present,present,Low Light,0.98,0
+FC_0014,S005,C005,2026-10-20 13:12:50,face_absent,absent,Normal,0.75,8
+FC_0015,S005,C005,2026-10-20 13:15:50,face_absent,absent,Normal,0.85,42
+FC_0016,S006,C006,2026-10-20 16:01:07,face_absent,present,Overexposed,0.9,19
+FC_0017,S006,C006,2026-10-20 16:30:07,face_present,present,Normal,0.9,0
+FC_0018,S007,C007,2026-10-20 10:12:15,face_absent,present,Normal,0.9,12
+FC_0019,S007,C007,2026-10-20 10:11:15,face_present,present,Normal,0.91,0
+FC_0020,S007,C007,2026-10-20 10:11:15,face_absent,absent,Normal,0.82,59
+FC_0021,S008,C008,2026-10-20 15:10:44,face_absent,absent,Normal,0.79,36
+FC_0022,S008,C008,2026-10-20 15:14:44,face_present,present,Overexposed,0.96,0
+FC_0023,S009,C009,2026-10-20 11:25:42,face_absent,absent,Normal,0.68,91
+FC_0024,S009,C009,2026-10-20 11:10:42,face_present,present,Low Light,0.82,0
+FC_0025,S009,C009,2026-10-20 11:13:42,face_present,present,Normal,0.82,0
+FC_0026,S010,C010,2026-10-20 10:28:12,face_present,present,Normal,0.91,0
+FC_0027,S010,C010,2026-10-20 10:31:12,face_present,present,Normal,0.86,0
+FC_0028,S010,C010,2026-10-20 10:30:12,face_absent,absent,Normal,0.69,46
+FC_0029,S010,C010,2026-10-20 09:51:12,face_present,absent,Low Light,0.79,0
+FC_0030,S011,C011,2026-10-20 13:18:42,face_absent,absent,Normal,0.82,9
+FC_0031,S011,C011,2026-10-20 14:00:42,face_present,present,Normal,0.74,0
+FC_0032,S011,C011,2026-10-20 13:33:42,face_present,present,Low Light,0.89,0
+FC_0033,S012,C012,2026-10-20 17:40:17,face_absent,absent,Low Light,0.84,10
+FC_0034,S012,C012,2026-10-20 17:12:17,face_present,present,Normal,0.94,0
+FC_0035,S012,C012,2026-10-20 17:12:17,face_absent,absent,Normal,0.74,89
+FC_0036,S012,C012,2026-10-20 17:32:17,face_present,present,Normal,0.97,0
+FC_0037,S013,C013,2026-10-20 15:39:09,face_present,present,Normal,0.87,0
+FC_0038,S013,C013,2026-10-20 15:46:09,face_absent,absent,Normal,0.92,16
+FC_0039,S013,C013,2026-10-20 15:38:09,face_present,present,Normal,0.96,0
+FC_0040,S014,C014,2026-10-20 15:33:20,face_present,present,Low Light,0.9,0
+FC_0041,S014,C014,2026-10-20 15:44:20,face_absent,present,Normal,0.7,117
+FC_0042,S015,C015,2026-10-20 14:50:23,face_present,present,Normal,0.91,0
+FC_0043,S015,C015,2026-10-20 15:21:23,face_absent,absent,Normal,0.86,74
+FC_0044,S015,C015,2026-10-20 15:05:23,face_present,present,Normal,0.89,0
+FC_0045,S016,C016,2026-10-20 16:07:18,face_present,present,Normal,0.96,0
+FC_0046,S016,C016,2026-10-20 15:48:18,face_present,present,Low Light,0.85,0
+FC_0047,S016,C016,2026-10-20 15:26:18,face_present,present,Normal,0.93,0
+FC_0048,S017,C017,2026-10-20 13:54:20,face_absent,present,Overexposed,0.73,112
+FC_0049,S017,C017,2026-10-20 13:47:20,face_absent,present,Overexposed,0.94,104
+FC_0050,S018,C018,2026-10-20 10:26:29,face_present,present,Normal,0.82,0
+FC_0051,S018,C018,2026-10-20 10:47:29,face_present,present,Overexposed,0.75,0
+FC_0052,S018,C018,2026-10-20 10:37:29,face_present,present,Normal,0.8,0
+FC_0053,S018,C018,2026-10-20 10:31:29,face_present,present,Low Light,0.82,0
+FC_0054,S019,C019,2026-10-20 16:29:04,face_absent,present,Low Light,0.92,14
+FC_0055,S019,C019,2026-10-20 16:23:04,face_present,present,Low Light,0.93,0
+FC_0056,S020,C020,2026-10-20 13:03:11,face_present,present,Normal,0.9,0
+FC_0057,S020,C020,2026-10-20 13:05:11,face_present,present,Normal,0.95,0
+FC_0058,S020,C020,2026-10-20 13:29:11,face_present,present,Normal,0.75,0
+FC_0059,S020,C020,2026-10-20 13:13:11,face_absent,present,Low Light,0.76,13
+FC_0060,S021,C021,2026-10-20 13:36:10,face_present,present,Normal,0.92,0
+FC_0061,S021,C021,2026-10-20 13:17:10,detection_unavailable,present,Overexposed,0.31,0
+FC_0062,S022,C022,2026-10-20 12:27:58,face_present,present,Normal,0.91,0
+FC_0063,S022,C022,2026-10-20 12:02:58,face_absent,absent,Normal,0.79,55
+FC_0064,S022,C022,2026-10-20 12:26:58,face_present,present,Normal,0.92,0
+FC_0065,S023,C023,2026-10-20 10:36:37,face_present,present,Normal,0.82,0
+FC_0066,S023,C023,2026-10-20 11:08:37,face_present,present,Normal,0.75,0
+FC_0067,S023,C023,2026-10-20 11:01:37,face_present,present,Low Light,0.75,0
+FC_0068,S023,C023,2026-10-20 11:19:37,face_present,present,Low Light,0.9,0
+FC_0069,S024,C024,2026-10-20 16:38:50,face_present,present,Overexposed,0.72,0
+FC_0070,S024,C024,2026-10-20 16:47:50,face_present,present,Normal,0.76,0
+FC_0071,S024,C024,2026-10-20 16:52:50,face_present,present,Overexposed,0.89,0
+FC_0072,S025,C025,2026-10-20 15:54:09,face_present,present,Normal,0.97,0
+FC_0073,S025,C025,2026-10-20 15:22:09,face_present,present,Low Light,0.79,0
+FC_0074,S025,C025,2026-10-20 15:31:09,face_absent,absent,Normal,0.84,88
+FC_0075,S026,C026,2026-10-20 14:21:03,face_present,present,Normal,0.79,0
+FC_0076,S026,C026,2026-10-20 14:20:03,face_present,present,Normal,0.96,0
+FC_0077,S026,C026,2026-10-20 14:49:03,face_present,present,Normal,0.83,0
+FC_0078,S027,C027,2026-10-20 13:06:09,face_absent,absent,Low Light,0.8,30
+FC_0079,S027,C027,2026-10-20 12:49:09,face_present,present,Low Light,0.92,0
+FC_0080,S027,C027,2026-10-20 12:58:09,face_present,present,Normal,0.83,0
+FC_0081,S027,C027,2026-10-20 12:30:09,detection_unavailable,present,Low Light,0.22,0
+FC_0082,S028,C028,2026-10-20 16:06:55,face_present,present,Overexposed,0.89,0
+FC_0083,S028,C028,2026-10-20 15:43:55,face_present,present,Normal,0.92,0
+FC_0084,S028,C028,2026-10-20 16:01:55,face_present,absent,Low Light,0.98,0
+FC_0085,S028,C028,2026-10-20 15:52:55,face_present,present,Normal,0.81,0
+FC_0086,S029,C029,2026-10-20 14:12:48,face_present,present,Normal,0.75,0
+FC_0087,S029,C029,2026-10-20 13:32:48,face_present,present,Normal,0.96,0
+FC_0088,S029,C029,2026-10-20 13:27:48,face_present,absent,Normal,0.82,0
+FC_0089,S030,C030,2026-10-20 12:58:50,face_absent,present,Low Light,0.86,77
+FC_0090,S030,C030,2026-10-20 13:07:50,face_present,present,Normal,0.79,0
+FC_0091,S031,C031,2026-10-20 13:19:13,face_present,present,Normal,0.87,0
+FC_0092,S031,C031,2026-10-20 13:00:13,face_absent,absent,Normal,0.86,84
+FC_0093,S031,C031,2026-10-20 13:08:13,face_present,present,Overexposed,0.95,0
+FC_0094,S031,C031,2026-10-20 13:18:13,face_absent,present,Normal,0.79,54
+FC_0095,S032,C032,2026-10-20 11:09:04,face_present,present,Normal,0.87,0
+FC_0096,S032,C032,2026-10-20 11:13:04,face_absent,absent,Normal,0.7,8
+FC_0097,S033,C033,2026-10-20 09:51:13,face_absent,absent,Overexposed,0.93,79
+FC_0098,S033,C033,2026-10-20 10:26:13,face_present,present,Normal,0.77,0
+FC_0099,S034,C034,2026-10-20 13:38:12,face_present,present,Normal,0.98,0
+FC_0100,S034,C034,2026-10-20 13:57:12,face_present,present,Normal,0.94,0
+FC_0101,S034,C034,2026-10-20 13:58:12,face_absent,absent,Normal,0.93,76
+FC_0102,S035,C035,2026-10-20 16:35:11,face_present,present,Normal,0.73,0
+FC_0103,S035,C035,2026-10-20 16:43:11,face_absent,present,Low Light,0.73,33
+FC_0104,S035,C035,2026-10-20 16:35:11,face_present,present,Overexposed,0.85,0
+FC_0105,S035,C035,2026-10-20 16:45:11,face_absent,absent,Normal,0.84,76
+FC_0106,S036,C036,2026-10-20 09:39:37,face_present,present,Overexposed,0.98,0
+FC_0107,S036,C036,2026-10-20 09:44:37,face_present,present,Normal,0.79,0
+FC_0108,S036,C036,2026-10-20 10:19:37,face_present,present,Normal,0.89,0
+FC_0109,S036,C036,2026-10-20 10:02:37,face_absent,absent,Normal,0.77,10
+FC_0110,S037,C037,2026-10-20 16:45:58,face_present,present,Low Light,0.96,0
+FC_0111,S037,C037,2026-10-20 16:12:58,face_absent,absent,Normal,0.82,73
+FC_0112,S037,C037,2026-10-20 16:06:58,face_absent,absent,Normal,0.72,105
+FC_0113,S037,C037,2026-10-20 16:13:58,face_present,present,Normal,0.81,0
+FC_0114,S038,C038,2026-10-20 16:14:15,face_present,present,Low Light,0.95,0
+FC_0115,S038,C038,2026-10-20 15:46:15,face_present,present,Low Light,0.93,0
+FC_0116,S038,C038,2026-10-20 16:01:15,face_present,present,Normal,0.81,0
+FC_0117,S039,C039,2026-10-20 11:59:50,face_absent,absent,Normal,0.64,102
+FC_0118,S039,C039,2026-10-20 11:27:50,face_present,present,Normal,0.81,0
+FC_0119,S039,C039,2026-10-20 11:19:50,face_absent,present,Low Light,0.81,58
+FC_0120,S039,C039,2026-10-20 11:35:50,face_present,present,Low Light,0.73,0
+FC_0121,S040,C040,2026-10-20 14:08:11,face_present,present,Normal,0.75,0
+FC_0122,S040,C040,2026-10-20 14:33:11,face_absent,absent,Normal,0.82,118
+FC_0123,S040,C040,2026-10-20 14:37:11,face_present,present,Normal,0.95,0
+FC_0124,S041,C041,2026-10-20 10:58:18,face_present,present,Normal,0.85,0
+FC_0125,S041,C041,2026-10-20 10:49:18,face_present,present,Low Light,0.74,0
+FC_0126,S042,C042,2026-10-20 15:14:52,face_present,present,Normal,0.73,0
+FC_0127,S042,C042,2026-10-20 15:25:52,face_present,present,Normal,0.79,0
+FC_0128,S042,C042,2026-10-20 15:44:52,face_present,present,Normal,0.74,0
+FC_0129,S042,C042,2026-10-20 15:51:52,face_present,present,Normal,0.82,0
+FC_0130,S043,C043,2026-10-20 15:25:15,face_present,present,Normal,0.87,0
+FC_0131,S043,C043,2026-10-20 15:20:15,face_absent,absent,Normal,0.73,33
+FC_0132,S044,C044,2026-10-20 12:39:10,face_present,present,Normal,0.78,0
+FC_0133,S044,C044,2026-10-20 12:00:10,face_absent,absent,Normal,0.7,102
+FC_0134,S044,C044,2026-10-20 12:18:10,face_absent,absent,Low Light,0.74,43
+FC_0135,S045,C045,2026-10-20 09:42:36,face_present,present,Normal,0.94,0
+FC_0136,S045,C045,2026-10-20 10:25:36,face_present,present,Normal,0.91,0
+FC_0137,S045,C045,2026-10-20 09:47:36,face_present,present,Normal,0.77,0
+FC_0138,S045,C045,2026-10-20 09:40:36,face_present,present,Normal,0.75,0
+FC_0139,S046,C046,2026-10-20 17:03:56,face_present,present,Normal,0.85,0
+FC_0140,S046,C046,2026-10-20 17:32:56,face_present,present,Normal,0.87,0
+FC_0141,S046,C046,2026-10-20 16:59:56,face_present,present,Overexposed,0.79,0
+FC_0142,S047,C047,2026-10-20 12:46:55,face_present,present,Low Light,0.83,0
+FC_0143,S047,C047,2026-10-20 13:07:55,face_present,present,Normal,0.83,0
+FC_0144,S048,C048,2026-10-20 16:23:41,detection_unavailable,present,Overexposed,0.34,0
+FC_0145,S048,C048,2026-10-20 16:41:41,face_present,present,Normal,0.76,0
+FC_0146,S049,C049,2026-10-20 15:06:24,face_present,present,Low Light,0.82,0
+FC_0147,S049,C049,2026-10-20 15:14:24,face_present,present,Normal,0.91,0
+FC_0148,S050,C050,2026-10-20 15:55:37,face_present,present,Normal,0.82,0
+FC_0149,S050,C050,2026-10-20 16:04:37,face_present,present,Normal,0.89,0
+FC_0150,S050,C050,2026-10-20 15:23:37,face_present,present,Overexposed,0.76,0
+FC_0151,S050,C050,2026-10-20 15:32:37,face_present,present,Low Light,0.87,0
+FC_0152,S051,C051,2026-10-20 15:46:45,face_present,present,Low Light,0.76,0
+FC_0153,S051,C051,2026-10-20 15:12:45,face_present,present,Normal,0.81,0
+FC_0154,S052,C052,2026-10-20 10:50:25,face_present,present,Normal,0.83,0
+FC_0155,S052,C052,2026-10-20 11:06:25,face_present,present,Normal,0.93,0
+FC_0156,S052,C052,2026-10-20 11:04:25,face_present,present,Normal,0.79,0
+FC_0157,S053,C053,2026-10-20 12:18:40,face_present,present,Normal,0.83,0
+FC_0158,S053,C053,2026-10-20 12:45:40,face_present,present,Normal,0.76,0
+FC_0159,S054,C054,2026-10-20 13:13:01,face_present,present,Normal,0.75,0
+FC_0160,S054,C054,2026-10-20 13:36:01,face_present,present,Normal,0.76,0
+FC_0161,S054,C054,2026-10-20 13:16:01,face_absent,absent,Normal,0.64,48
+FC_0162,S055,C055,2026-10-20 13:13:56,face_present,absent,Normal,0.95,0
+FC_0163,S055,C055,2026-10-20 13:25:56,face_present,present,Overexposed,0.88,0
+FC_0164,S055,C055,2026-10-20 13:23:56,face_present,present,Normal,0.93,0
+FC_0165,S056,C056,2026-10-20 10:06:01,face_present,present,Normal,0.97,0
+FC_0166,S056,C056,2026-10-20 09:32:01,face_present,present,Normal,0.78,0
+FC_0167,S056,C056,2026-10-20 10:09:01,face_present,present,Overexposed,0.76,0
+FC_0168,S057,C057,2026-10-20 13:50:21,face_present,present,Normal,0.78,0
+FC_0169,S057,C057,2026-10-20 14:16:21,face_present,absent,Normal,0.76,0
+FC_0170,S058,C058,2026-10-20 10:40:03,face_present,present,Normal,0.88,0
+FC_0171,S058,C058,2026-10-20 10:31:03,face_present,present,Normal,0.81,0
+FC_0172,S058,C058,2026-10-20 10:48:03,face_absent,absent,Normal,0.8,25
+FC_0173,S059,C059,2026-10-20 15:14:49,face_present,present,Low Light,0.85,0
+FC_0174,S059,C059,2026-10-20 15:30:49,face_absent,absent,Normal,0.9,110
+FC_0175,S060,C060,2026-10-20 15:03:51,face_present,present,Normal,0.94,0
+FC_0176,S060,C060,2026-10-20 14:59:51,face_present,present,Low Light,0.87,0
+FC_0177,S060,C060,2026-10-20 14:34:51,face_present,present,Normal,0.75,0
+FC_0178,S060,C060,2026-10-20 15:18:51,face_present,present,Normal,0.91,0
+FC_0179,S061,C061,2026-10-20 16:58:48,face_present,present,Overexposed,0.98,0
+FC_0180,S061,C061,2026-10-20 17:03:48,face_present,present,Normal,0.74,0
+FC_0181,S061,C061,2026-10-20 16:36:48,face_present,present,Normal,0.77,0
+FC_0182,S061,C061,2026-10-20 17:02:48,face_present,present,Normal,0.89,0
+FC_0183,S062,C062,2026-10-20 15:43:29,detection_unavailable,present,Low Light,0.29,0
+FC_0184,S062,C062,2026-10-20 15:31:29,face_present,present,Normal,0.98,0
+FC_0185,S062,C062,2026-10-20 15:45:29,face_present,present,Normal,0.96,0
+FC_0186,S062,C062,2026-10-20 15:33:29,face_absent,absent,Normal,0.79,116
+FC_0187,S063,C063,2026-10-20 12:38:59,face_present,present,Normal,0.76,0
+FC_0188,S063,C063,2026-10-20 12:28:59,face_present,present,Normal,0.97,0
+FC_0189,S064,C064,2026-10-20 17:30:24,face_present,present,Normal,0.9,0
+FC_0190,S064,C064,2026-10-20 17:00:24,face_absent,absent,Normal,0.92,13
+FC_0191,S065,C065,2026-10-20 13:01:12,face_present,present,Normal,0.87,0
+FC_0192,S065,C065,2026-10-20 12:38:12,face_present,present,Normal,0.73,0
+FC_0193,S065,C065,2026-10-20 13:04:12,face_absent,absent,Normal,0.62,18
+FC_0194,S065,C065,2026-10-20 13:01:12,face_present,present,Normal,0.88,0
+FC_0195,S066,C066,2026-10-20 12:14:23,face_present,present,Normal,0.85,0
+FC_0196,S066,C066,2026-10-20 12:16:23,face_absent,absent,Normal,0.9,116
+FC_0197,S066,C066,2026-10-20 12:23:23,face_present,present,Normal,0.74,0
+FC_0198,S067,C067,2026-10-20 16:19:39,face_present,present,Normal,0.79,0
+FC_0199,S067,C067,2026-10-20 16:21:39,face_present,absent,Normal,0.72,0
+FC_0200,S068,C068,2026-10-20 12:38:49,face_present,present,Normal,0.98,0
+FC_0201,S068,C068,2026-10-20 12:50:49,face_present,present,Normal,0.92,0
+FC_0202,S068,C068,2026-10-20 12:22:49,face_present,present,Low Light,0.98,0
+FC_0203,S068,C068,2026-10-20 12:19:49,face_absent,present,Normal,0.93,54
+FC_0204,S069,C069,2026-10-20 09:56:38,face_present,present,Overexposed,0.97,0
+FC_0205,S069,C069,2026-10-20 09:54:38,face_present,present,Normal,0.75,0
+FC_0206,S069,C069,2026-10-20 10:03:38,detection_unavailable,present,Low Light,0.33,0
+FC_0207,S070,C070,2026-10-20 13:06:23,face_present,present,Normal,0.85,0
+FC_0208,S070,C070,2026-10-20 12:52:23,face_present,present,Normal,0.74,0
+FC_0209,S070,C070,2026-10-20 13:04:23,face_present,present,Low Light,0.92,0
+FC_0210,S070,C070,2026-10-20 13:22:23,face_present,present,Low Light,0.73,0
+FC_0211,S071,C071,2026-10-20 15:59:55,face_present,present,Normal,0.97,0
+FC_0212,S071,C071,2026-10-20 16:00:55,face_absent,absent,Normal,0.63,69
+FC_0213,S071,C071,2026-10-20 16:09:55,face_absent,present,Normal,0.87,32
+FC_0214,S072,C072,2026-10-20 11:13:56,face_present,present,Normal,0.85,0
+FC_0215,S072,C072,2026-10-20 11:04:56,face_present,present,Low Light,0.79,0
+FC_0216,S072,C072,2026-10-20 11:20:56,face_absent,absent,Normal,0.64,66
+FC_0217,S072,C072,2026-10-20 11:11:56,face_absent,absent,Low Light,0.91,53
+FC_0218,S073,C073,2026-10-20 12:59:12,detection_unavailable,present,Overexposed,0.41,0
+FC_0219,S073,C073,2026-10-20 13:31:12,face_absent,absent,Normal,0.61,10
+FC_0220,S073,C073,2026-10-20 12:52:12,face_present,present,Low Light,0.86,0
+FC_0221,S073,C073,2026-10-20 13:06:12,face_absent,absent,Overexposed,0.87,69
+FC_0222,S074,C074,2026-10-20 10:30:21,face_present,present,Low Light,0.92,0
+FC_0223,S074,C074,2026-10-20 10:31:21,face_present,present,Normal,0.96,0
+FC_0224,S075,C075,2026-10-20 15:01:30,face_absent,absent,Normal,0.61,86
+FC_0225,S075,C075,2026-10-20 15:13:30,face_present,present,Overexposed,0.79,0
+FC_0226,S075,C075,2026-10-20 15:11:30,face_present,present,Normal,0.74,0
+FC_0227,S075,C075,2026-10-20 15:21:30,face_absent,absent,Normal,0.77,103
+FC_0228,S076,C076,2026-10-20 13:21:20,face_present,present,Overexposed,0.87,0
+FC_0229,S076,C076,2026-10-20 13:05:20,face_present,present,Normal,0.9,0
+FC_0230,S076,C076,2026-10-20 13:25:20,face_absent,absent,Normal,0.68,60
+FC_0231,S077,C077,2026-10-20 12:18:29,face_present,present,Normal,0.96,0
+FC_0232,S077,C077,2026-10-20 12:13:29,face_absent,absent,Low Light,0.86,38
+FC_0233,S077,C077,2026-10-20 12:00:29,face_present,present,Low Light,0.72,0
+FC_0234,S078,C078,2026-10-20 11:38:54,face_present,present,Normal,0.82,0
+FC_0235,S078,C078,2026-10-20 11:16:54,face_absent,absent,Low Light,0.61,112
+FC_0236,S079,C079,2026-10-20 14:02:57,face_present,present,Normal,0.97,0
+FC_0237,S079,C079,2026-10-20 14:06:57,face_present,present,Low Light,0.93,0
+FC_0238,S079,C079,2026-10-20 13:51:57,face_present,present,Normal,0.73,0
+FC_0239,S080,C080,2026-10-20 14:39:30,face_present,present,Overexposed,0.76,0
+FC_0240,S080,C080,2026-10-20 14:37:30,face_absent,absent,Normal,0.77,58
+FC_0241,S080,C080,2026-10-20 14:36:30,face_present,present,Normal,0.99,0
+FC_0242,S081,C081,2026-10-20 17:10:20,face_absent,absent,Normal,0.84,39
+FC_0243,S081,C081,2026-10-20 16:37:20,face_present,present,Low Light,0.95,0
+FC_0244,S082,C082,2026-10-20 13:17:49,face_present,present,Normal,0.95,0
+FC_0245,S082,C082,2026-10-20 12:53:49,face_absent,present,Normal,0.74,45
+FC_0246,S082,C082,2026-10-20 12:48:49,face_absent,present,Low Light,0.85,25
+FC_0247,S083,C083,2026-10-20 11:05:07,face_present,present,Normal,0.95,0
+FC_0248,S083,C083,2026-10-20 10:29:07,face_present,present,Low Light,0.89,0
+FC_0249,S083,C083,2026-10-20 11:05:07,face_present,present,Normal,0.94,0
+FC_0250,S083,C083,2026-10-20 10:46:07,face_present,present,Normal,0.79,0
+FC_0251,S084,C084,2026-10-20 16:21:41,face_absent,absent,Normal,0.71,9
+FC_0252,S084,C084,2026-10-20 16:07:41,face_present,present,Normal,0.85,0
+FC_0253,S085,C085,2026-10-20 14:24:17,face_present,present,Normal,0.91,0
+FC_0254,S085,C085,2026-10-20 14:39:17,face_present,present,Overexposed,0.92,0
+FC_0255,S085,C085,2026-10-20 14:47:17,face_present,present,Normal,0.85,0
+FC_0256,S086,C086,2026-10-20 15:08:07,detection_unavailable,present,Low Light,0.33,0
+FC_0257,S086,C086,2026-10-20 15:13:07,face_absent,absent,Low Light,0.73,110
+FC_0258,S086,C086,2026-10-20 14:42:07,face_present,present,Overexposed,0.94,0
+FC_0259,S087,C087,2026-10-20 10:34:40,face_present,present,Normal,0.73,0
+FC_0260,S087,C087,2026-10-20 09:56:40,face_present,present,Normal,0.97,0
+FC_0261,S087,C087,2026-10-20 09:58:40,face_present,present,Low Light,0.94,0
+FC_0262,S088,C088,2026-10-20 11:44:56,face_present,present,Low Light,0.84,0
+FC_0263,S088,C088,2026-10-20 11:36:56,face_absent,absent,Normal,0.85,19
+FC_0264,S088,C088,2026-10-20 11:56:56,face_present,present,Normal,0.81,0
+FC_0265,S088,C088,2026-10-20 12:19:56,face_present,present,Normal,0.9,0
+FC_0266,S089,C089,2026-10-20 15:56:33,face_present,present,Normal,0.99,0
+FC_0267,S089,C089,2026-10-20 15:53:33,face_absent,absent,Normal,0.68,61
+FC_0268,S089,C089,2026-10-20 15:27:33,face_present,present,Normal,0.92,0
+FC_0269,S089,C089,2026-10-20 15:36:33,face_present,present,Normal,0.99,0
+FC_0270,S090,C090,2026-10-20 16:32:29,face_present,present,Normal,0.83,0
+FC_0271,S090,C090,2026-10-20 16:19:29,face_present,present,Low Light,0.79,0
+FC_0272,S090,C090,2026-10-20 15:55:29,face_present,present,Normal,0.78,0
+FC_0273,S091,C091,2026-10-20 12:40:54,face_present,present,Normal,0.82,0
+FC_0274,S091,C091,2026-10-20 12:34:54,face_present,present,Normal,0.79,0
+FC_0275,S091,C091,2026-10-20 13:19:54,face_present,present,Normal,0.75,0
+FC_0276,S092,C092,2026-10-20 15:55:17,face_present,present,Overexposed,0.81,0
+FC_0277,S092,C092,2026-10-20 16:10:17,face_present,present,Normal,0.78,0
+FC_0278,S093,C093,2026-10-20 15:51:00,face_present,present,Normal,0.9,0
+FC_0279,S093,C093,2026-10-20 16:29:00,face_present,present,Normal,0.91,0
+FC_0280,S093,C093,2026-10-20 16:08:00,face_present,present,Normal,0.86,0
+FC_0281,S094,C094,2026-10-20 12:58:59,face_absent,present,Low Light,0.8,68
+FC_0282,S094,C094,2026-10-20 12:29:59,face_absent,absent,Normal,0.93,36
+FC_0283,S095,C095,2026-10-20 16:50:04,face_present,present,Normal,0.86,0
+FC_0284,S095,C095,2026-10-20 16:29:04,face_present,present,Normal,0.91,0
+FC_0285,S096,C096,2026-10-20 11:56:23,face_present,present,Normal,0.79,0
+FC_0286,S096,C096,2026-10-20 12:05:23,face_present,present,Normal,0.73,0
+FC_0287,S096,C096,2026-10-20 12:07:23,face_present,present,Normal,0.76,0
+FC_0288,S097,C097,2026-10-20 10:59:59,face_absent,absent,Low Light,0.94,54
+FC_0289,S097,C097,2026-10-20 11:32:59,face_present,present,Normal,0.72,0
+FC_0290,S098,C098,2026-10-20 14:48:35,face_present,present,Low Light,0.75,0
+FC_0291,S098,C098,2026-10-20 14:56:35,face_present,present,Normal,0.9,0
+FC_0292,S098,C098,2026-10-20 15:19:35,face_absent,absent,Normal,0.95,77
+FC_0293,S099,C099,2026-10-20 14:18:38,face_present,present,Low Light,0.74,0
+FC_0294,S099,C099,2026-10-20 14:40:38,face_present,present,Low Light,0.81,0
+FC_0295,S099,C099,2026-10-20 14:47:38,face_present,present,Normal,0.81,0
+FC_0296,S099,C099,2026-10-20 14:54:38,face_absent,absent,Low Light,0.6,22
+FC_0297,S100,C100,2026-10-20 10:23:04,face_present,present,Normal,0.87,0
+FC_0298,S100,C100,2026-10-20 10:44:04,face_present,present,Normal,0.74,0

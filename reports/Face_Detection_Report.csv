@@ -1,0 +1,36 @@
+﻿Section,Metric,Value
+Frequency Analysis,Total Checks,298
+Frequency Analysis,Face Present Count,220
+Frequency Analysis,Face Present %,73.83
+Frequency Analysis,Face Absent Count,71
+Frequency Analysis,Face Absent %,23.83
+Frequency Analysis,Detection Unavailable Count,7
+Frequency Analysis,Detection Unavailable %,2.35
+Accuracy Metrics,Accuracy,0.9244
+Accuracy Metrics,Precision,0.9727
+Accuracy Metrics,Recall,0.9304
+Accuracy Metrics,F1-Score,0.9511
+Accuracy Metrics,False Positive Rate,0.0984
+Accuracy Metrics,False Negative Rate,0.0696
+Accuracy Metrics,True Positives,214
+Accuracy Metrics,True Negatives,55
+Accuracy Metrics,False Positives,6
+Accuracy Metrics,False Negatives,16
+Lighting – Low Light,Total Checks,60
+Lighting – Low Light,Accuracy,83.93%
+Lighting – Low Light,Detection Unavailable Rate,6.67%
+Lighting – Low Light,False Positive Rate (FPR),18.18%
+Lighting – Low Light,False Negative Rate (FNR),15.56%
+Lighting – Low Light,Avg Confidence,0.802
+Lighting – Normal,Total Checks,210
+Lighting – Normal,Accuracy,95.24%
+Lighting – Normal,Detection Unavailable Rate,0.0%
+Lighting – Normal,False Positive Rate (FPR),8.33%
+Lighting – Normal,False Negative Rate (FNR),3.7%
+Lighting – Normal,Avg Confidence,0.832
+Lighting – Overexposed,Total Checks,28
+Lighting – Overexposed,Accuracy,88.0%
+Lighting – Overexposed,Detection Unavailable Rate,10.71%
+Lighting – Overexposed,False Positive Rate (FPR),0.0%
+Lighting – Overexposed,False Negative Rate (FNR),13.04%
+Lighting – Overexposed,Avg Confidence,0.809

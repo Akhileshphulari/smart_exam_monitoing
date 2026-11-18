@@ -1,0 +1,15 @@
+﻿Section,Metric,Value
+Candidate Cleaning,Initial Candidates,100
+Candidate Cleaning,Final Candidates,100
+Candidate Cleaning,Duplicates Removed,0
+Session Cleaning,Initial Sessions,100
+Session Cleaning,Final Sessions,100
+Session Cleaning,Missing Start Times,0
+Session Cleaning,Missing End Times,1
+Session Cleaning,Invalid Durations Detected,0
+Session Cleaning,Durations Repaired,0
+Event Cleaning,Raw Events,452
+Event Cleaning,Duplicates Removed,0
+Event Cleaning,Orphan Events Removed,0
+Event Cleaning,Out Of Order Events,0
+Event Cleaning,Final Clean Events,452

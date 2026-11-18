@@ -1,0 +1,8 @@
+﻿Section,Metric,Value
+Outlier Summary,Total Sessions Analyzed,100
+Outlier Summary,IQR Outliers,0
+Outlier Summary,Z-Score Outliers,1
+Outlier Summary,Consensus Outliers (Both Methods),0
+Outlier Summary,IQR Outlier %,0.0
+Outlier Summary,Z-Score Outlier %,1.0
+Outlier Detail,Session S099 (Candidate C099),Suspicious Activity Count Z-score of 2.611 deviates beyond 2.5 standard deviations from cohort mean (2.61)
