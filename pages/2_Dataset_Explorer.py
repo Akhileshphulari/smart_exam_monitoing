@@ -92,14 +92,6 @@ with col2:
     
     if not df.empty:
         st.dataframe(df, use_container_width=True, hide_index=True, height=400)
-        
-        st.markdown("##### Data Types")
-        dtypes_df = pd.DataFrame({
-            "Column": df.columns,
-            "Data Type": [str(dt) for dt in df.dtypes],
-            "Category": ["Numerical" if pd.api.types.is_numeric_dtype(df[c]) else "Categorical/Text" for c in df.columns]
-        })
-        st.dataframe(dtypes_df, use_container_width=True, hide_index=True)
     else:
         st.warning(f"Dataset '{selected_key}' is empty or not found.")
     st.markdown("</div>", unsafe_allow_html=True)
