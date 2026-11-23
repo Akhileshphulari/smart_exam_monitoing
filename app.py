@@ -165,32 +165,6 @@ st.markdown("""
         color: #94a3b8;
     }
 
-    /* ─── Status Badges ─── */
-    .badge-external {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 6px 14px;
-        background: rgba(16,185,129,0.15);
-        border: 1px solid #10b981;
-        color: #10b981;
-        border-radius: 9999px;
-        font-size: 0.82rem;
-        font-weight: 600;
-    }
-    .badge-fallback {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 6px 14px;
-        background: rgba(245,158,11,0.15);
-        border: 1px solid #f59e0b;
-        color: #f59e0b;
-        border-radius: 9999px;
-        font-size: 0.82rem;
-        font-weight: 600;
-    }
-
     /* ─── Rounded KPI Cards ─── */
     .kpi-card {
         background: linear-gradient(135deg, #13194a 0%, #1c2463 100%);
@@ -442,26 +416,16 @@ if selected_risk != "All Risks":
     risk = risk[risk["risk_level"] == selected_risk]
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Top Brand Header with Data Provenance Badge & Last Updated Timestamp
+# Top Brand Header
 # ─────────────────────────────────────────────────────────────────────────────
-is_external = audit_dict.get("is_external", False)
-badge_class = "badge-external" if is_external else "badge-fallback"
-source_label = "🟢 Source: Exam-monitoring-main (Live Ingested)" if is_external else "🟡 Source: Team 4 Fallback (Synthetic Baseline)"
-ingested_time = audit_dict.get("ingested_at", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-
 st.markdown(f"""
 <div class="brand-header">
     <div>
         <h1>Smart Exam Monitoring &amp; Integrity Analytics Platform</h1>
         <p>Team 4 Data Science Module • {page_selection}</p>
     </div>
-    <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
-        <div class="{badge_class}">
-            {source_label}
-        </div>
-        <div style="font-size:0.78rem; color:#94a3b8; background:rgba(30,37,84,0.7); padding:6px 12px; border-radius:8px; border:1px solid #2e3880;">
-            🕒 Ingested: {ingested_time} • 👥 {len(candidates)} Candidates • ⏱️ {len(sessions)} Sessions • ⚡ {len(events)} Events
-        </div>
+    <div style="display:inline-flex; align-items:center; gap:8px; padding:6px 14px; background:rgba(16,185,129,0.15); border:1px solid #10b981; color:#10b981; border-radius:9999px; font-size:0.8rem; font-weight:600;">
+        <span style="width:8px; height:8px; border-radius:50%; background:#10b981;"></span> Engine Active
     </div>
 </div>
 """, unsafe_allow_html=True)
