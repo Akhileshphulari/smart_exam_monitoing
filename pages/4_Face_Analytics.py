@@ -79,8 +79,11 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=600)
 def get_face_data():
+    if "pipeline_data" in st.session_state:
+        pipeline = st.session_state["pipeline_data"]
+        return pipeline.get("face_ground_truth", pd.DataFrame()), pipeline.get("events", pd.DataFrame())
     raw = load_all_datasets()
     pipeline = run_pipeline(raw)
     gt = pipeline.get("face_ground_truth", pd.DataFrame())

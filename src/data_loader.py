@@ -1,15 +1,24 @@
 """
 Module 1: Dataset Management
 Team 4: Smart Exam Monitoring & Integrity Analytics Platform
-Handles loading, profiling, summary statistics, and validation of all CSV datasets.
-Supports local directory files and custom user uploads.
+Handles loading, profiling, summary statistics, validation, and integration of all CSV datasets.
+Supports local directory files, external production datasets, and custom user uploads.
 """
 
 from pathlib import Path
-from typing import Dict, Union, Tuple, Optional
+from typing import Dict, Union, Tuple, Optional, Any
 import io
 import pandas as pd
 import numpy as np
+
+from src.data_integration import (
+    get_integrated_datasets,
+    ingest_uploaded_csvs,
+    get_current_pipeline_status,
+    DEFAULT_EXTERNAL_DIR,
+    DEFAULT_DATA_DIR,
+    DEFAULT_FALLBACK_DIR
+)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
@@ -20,6 +29,8 @@ SUPPORTED_DATASETS = [
     "events.csv",
     "scores.csv",
     "risk.csv",
+    "risk_data.csv",
+    "ai_reports.csv",
     "ai_report_metadata.csv",
     "face_monitoring_ground_truth.csv"
 ]
@@ -44,35 +55,20 @@ def load_dataset(file_or_path: Union[str, Path, io.BytesIO, io.StringIO]) -> pd.
         raise ValueError(f"Failed to load dataset: {e}")
 
 
-def load_all_datasets(data_dir: Optional[Path] = None) -> Dict[str, pd.DataFrame]:
+def load_all_datasets(data_dir: Optional[Union[str, Path]] = None, force_reload: bool = False) -> Dict[str, pd.DataFrame]:
     """
-    Load all available datasets into a dictionary mapped by key name.
+    Load all available datasets into a dictionary mapped by key name,
+    using the automated integration and normalization pipeline.
     """
-    directory = Path(data_dir) if data_dir else DATA_DIR
-    datasets = {}
-    
-    mapping = {
-        "candidates": "candidates.csv",
-        "sessions": "sessions.csv",
-        "events": "events.csv",
-        "scores": "scores.csv",
-        "risk": "risk.csv",
-        "ai_report_metadata": "ai_report_metadata.csv",
-        "face_ground_truth": "face_monitoring_ground_truth.csv"
-    }
-    
-    for key, filename in mapping.items():
-        file_path = directory / filename
-        if file_path.exists():
-            try:
-                datasets[key] = pd.read_csv(file_path)
-            except Exception as e:
-                print(f"Warning: could not read {filename}: {e}")
-                datasets[key] = pd.DataFrame()
-        else:
-            datasets[key] = pd.DataFrame()
-            
+    datasets, _ = get_integrated_datasets(source_dir=data_dir, force_reload=force_reload)
     return datasets
+
+
+def get_data_source_status() -> Dict[str, Any]:
+    """
+    Retrieves the current data source provenance, record counts, and last ingested timestamp.
+    """
+    return get_current_pipeline_status()
 
 
 def get_dataset_summary(df: pd.DataFrame, dataset_name: str = "Dataset") -> Dict:
@@ -170,4 +166,3 @@ def validate_uploaded_csv(uploaded_file) -> Tuple[bool, Union[pd.DataFrame, str]
         return True, df
     except Exception as e:
         return False, f"Failed to parse CSV file: {str(e)}"
-

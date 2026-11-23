@@ -44,8 +44,10 @@ st.markdown("# Dataset Explorer")
 st.markdown("*Load, profile, and explore all examination monitoring datasets*")
 
 # ---------- Load datasets ----------
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=600)
 def load_data():
+    if "raw_data" in st.session_state:
+        return st.session_state["raw_data"]
     return load_all_datasets()
 
 datasets = load_data()
@@ -56,7 +58,8 @@ dataset_names = {
     "sessions": "Sessions (sessions.csv)",
     "events": "Events (events.csv)",
     "scores": "Scores (scores.csv)",
-    "risk": "Risk (risk.csv)",
+    "risk": "Risk (risk.csv / risk_data.csv)",
+    "ai_reports": "AI Reports (ai_reports.csv)",
     "ai_report_metadata": "AI Report Metadata (ai_report_metadata.csv)",
     "face_ground_truth": "Face Monitoring Ground Truth (face_monitoring_ground_truth.csv)"
 }

@@ -75,8 +75,10 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=600)
 def get_clean_events():
+    if "pipeline_data" in st.session_state:
+        return st.session_state["pipeline_data"]["events"]
     raw = load_all_datasets()
     pipeline = run_pipeline(raw)
     return pipeline["events"]

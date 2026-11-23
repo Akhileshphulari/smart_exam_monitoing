@@ -57,8 +57,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=600)
 def load_data():
+    if "pipeline_data" in st.session_state and "raw_data" in st.session_state:
+        return st.session_state["raw_data"], st.session_state["pipeline_data"]
     raw = load_all_datasets()
     pipeline = run_pipeline(raw)
     return raw, pipeline

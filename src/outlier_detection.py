@@ -3,6 +3,8 @@ Module 4 (Step 3): Outlier Detection
 Team 4: Smart Exam Monitoring & Integrity Analytics Platform
 Implements IQR and Z-score outlier detection methods on session durations,
 event counts, and suspicious activity. Generates plain-language explanations.
+
+Optimized with vectorized feature extraction for rapid execution on large datasets.
 """
 
 from typing import Dict, List, Tuple
@@ -21,42 +23,61 @@ def build_outlier_feature_matrix(sessions: pd.DataFrame, events: pd.DataFrame, s
     - focus_lost_count
     - integrity_score
     """
-    df = sessions[["session_id", "candidate_id"]].copy()
+    if sessions.empty:
+        return pd.DataFrame(columns=[
+            "session_id", "candidate_id", "duration_minutes", "total_event_count",
+            "tab_switch_count", "face_absent_count", "face_not_visible_count",
+            "face_absence_count", "focus_lost_count", "suspicious_activity_count", "integrity_score"
+        ])
+
+    df = sessions[["session_id", "candidate_id"]].drop_duplicates(subset=["session_id"]).copy()
+    df["session_id"] = df["session_id"].astype(str)
+    df["candidate_id"] = df["candidate_id"].astype(str)
     
     # Duration in minutes
     if "duration_seconds" in sessions.columns:
         df["duration_minutes"] = (pd.to_numeric(sessions["duration_seconds"], errors="coerce") / 60.0).round(2).fillna(0)
+    elif "duration_mins" in sessions.columns:
+        df["duration_minutes"] = pd.to_numeric(sessions["duration_mins"], errors="coerce").round(2).fillna(0)
     else:
         df["duration_minutes"] = 0.0
         
-    # Aggregate event metrics
-    if not events.empty and "session_id" in events.columns:
+    # Vectorized event metrics
+    if not events.empty and "session_id" in events.columns and "event_type" in events.columns:
         ev = events.copy()
-        total_cnt = ev.groupby("session_id").size().rename("total_event_count")
-        df = df.merge(total_cnt, on="session_id", how="left")
-        df["total_event_count"] = df["total_event_count"].fillna(0).astype(int)
-        
-        for ev_type in ["tab_switch", "face_absent", "face_not_visible", "focus_lost"]:
-            cnt = ev[ev["event_type"] == ev_type].groupby("session_id").size().rename(f"{ev_type}_count")
-            df = df.merge(cnt, on="session_id", how="left")
-            df[f"{ev_type}_count"] = df[f"{ev_type}_count"].fillna(0).astype(int)
-            
-        # Standardize face absent column
-        if "face_not_visible_count" in df.columns:
-            df["face_absence_count"] = df["face_absent_count"] + df["face_not_visible_count"]
-        else:
-            df["face_absence_count"] = df["face_absent_count"]
+        ev["session_id"] = ev["session_id"].astype(str)
+        ev["_tab"] = (ev["event_type"] == "tab_switch").astype(int)
+        ev["_absent"] = (ev["event_type"] == "face_absent").astype(int)
+        ev["_not_vis"] = (ev["event_type"].isin(["face_not_visible", "left_seat"])).astype(int)
+        ev["_focus"] = (ev["event_type"].isin(["focus_lost", "looking_away"])).astype(int)
+
+        ev_matrix = ev.groupby("session_id", as_index=False).agg(
+            total_event_count=("event_type", "count"),
+            tab_switch_count=("_tab", "sum"),
+            face_absent_count=("_absent", "sum"),
+            face_not_visible_count=("_not_vis", "sum"),
+            focus_lost_count=("_focus", "sum")
+        )
+        df = df.merge(ev_matrix, on="session_id", how="left").fillna(0)
+        df["face_absence_count"] = df["face_absent_count"] + df["face_not_visible_count"]
     else:
         df["total_event_count"] = 0
         df["tab_switch_count"] = 0
+        df["face_absent_count"] = 0
+        df["face_not_visible_count"] = 0
         df["face_absence_count"] = 0
         df["focus_lost_count"] = 0
-        
+
+    for c in ["total_event_count", "tab_switch_count", "face_absent_count", "face_not_visible_count", "face_absence_count", "focus_lost_count"]:
+        df[c] = df[c].astype(int)
+
     df["suspicious_activity_count"] = df["tab_switch_count"] + df["face_absence_count"] + df["focus_lost_count"]
     
     # Merge integrity score
     if not scores.empty and "session_id" in scores.columns:
-        df = df.merge(scores[["session_id", "integrity_score"]], on="session_id", how="left")
+        sc = scores[["session_id", "integrity_score"]].drop_duplicates(subset=["session_id"]).copy()
+        sc["session_id"] = sc["session_id"].astype(str)
+        df = df.merge(sc, on="session_id", how="left")
         df["integrity_score"] = pd.to_numeric(df["integrity_score"], errors="coerce").fillna(70.0)
     else:
         df["integrity_score"] = 70.0
@@ -75,6 +96,8 @@ def detect_iqr_outliers(feature_df: pd.DataFrame,
     bounds_info = {}
     
     for feat in features:
+        if feat not in df.columns:
+            continue
         series = df[feat].dropna()
         if series.empty:
             continue
@@ -95,7 +118,7 @@ def detect_iqr_outliers(feature_df: pd.DataFrame,
         df[f"iqr_outlier_{feat}"] = (df[feat] < lower_bound) | (df[feat] > upper_bound)
         
     flag_cols = [f"iqr_outlier_{f}" for f in features if f"iqr_outlier_{f}" in df.columns]
-    df["iqr_is_outlier"] = df[flag_cols].any(axis=1)
+    df["iqr_is_outlier"] = df[flag_cols].any(axis=1) if flag_cols else False
     
     return df, bounds_info
 
@@ -111,12 +134,14 @@ def detect_zscore_outliers(feature_df: pd.DataFrame,
     z_stats = {}
     
     for feat in features:
+        if feat not in df.columns:
+            continue
         series = df[feat].dropna()
         if series.empty:
             continue
         mean_val = series.mean()
         std_val = series.std(ddof=1) if len(series) > 1 else 1.0
-        if std_val == 0:
+        if std_val == 0 or np.isnan(std_val):
             std_val = 1e-6
             
         z_scores = np.abs((df[feat] - mean_val) / std_val)
@@ -130,7 +155,7 @@ def detect_zscore_outliers(feature_df: pd.DataFrame,
         }
         
     flag_cols = [f"zscore_outlier_{f}" for f in features if f"zscore_outlier_{f}" in df.columns]
-    df["zscore_is_outlier"] = df[flag_cols].any(axis=1)
+    df["zscore_is_outlier"] = df[flag_cols].any(axis=1) if flag_cols else False
     
     return df, z_stats
 
@@ -182,4 +207,3 @@ def explain_outliers(df_with_flags: pd.DataFrame, features: List[str], bounds_in
         })
         
     return pd.DataFrame(explanations)
-
